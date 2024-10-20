@@ -1,0 +1,35 @@
+
+.parentComponent {
+        display: flex; 
+        flex-wrap: wrap;
+        width: 100%;    
+        
+    }
+
+
+.VTRroom {
+    min-width:70%;
+    max-width: 100%;
+    height: fit-content;
+    flex:1;
+}
+
+.TopGarments {
+    min-width: 30%;
+    max-width: 100%; 
+    flex:1;
+}
+
+@media  screen and (max-width: 800px){
+    .TopGarments {
+        min-width: 30%;
+        max-width: 100%; 
+        display:none;    
+    }
+
+    
+
+}
+
+
+    

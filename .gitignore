@@ -1,0 +1,25 @@
+# Ignore node_modules and virtual environments
+node_modules/
+env/
+venv/
+
+# Ignore Python compiled files
+*.pyc
+__pycache__/
+__pycache__
+
+# Ignore database files
+*.db
+*.sqlite3
+
+# Ignore specific large files
+*.pyd
+*.dll
+
+# Ignore sensitive files
+.env
+settings.py
+*.rdb
+manage.py
+api2
+theme/

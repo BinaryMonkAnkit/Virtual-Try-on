@@ -1,0 +1,37 @@
+
+.topGarmentCards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin: 20px; 
+    max-height: 80vh;
+    max-width: fit-content; 
+    overflow-y: auto;
+    padding-right: 10px;
+
+    
+    
+}
+
+.card {
+    margin: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width:fit-content;
+    height:fit-content;
+    max-width: 150px;
+    max-height: 200px;
+    
+}
+
+.GarmentHeading{
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width:fit-content;
+    background-color: #f0f4f8;    
+    
+    
+    
+}

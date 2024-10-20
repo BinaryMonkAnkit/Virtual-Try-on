@@ -1,0 +1,94 @@
+.room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh; 
+    background-color: #f0f4f8;
+    width: 100%;
+    border-radius: 10px;
+    flex-direction: column; 
+}
+
+.GarmentColors{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 5vh;
+    background-color: f0f4f8;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;    
+    
+}
+
+.zoomIn{
+    display: none;
+}
+
+
+
+.videoWrapper {
+    position: relative;
+    width: 90%; 
+    max-width: 800px; 
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; 
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom:20px; 
+}
+
+
+.videoFeed {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+@media screen and (max-width: 668px) {
+    .room {
+        display:flex;
+        flex-direction: column; 
+        height: 100vh; 
+        padding: 20px; 
+        width: 100%;
+    }
+
+    
+
+    .videoWrapper {
+        width: 100%; /* Full width on mobile */
+        max-width: 100%; /* No max-width limitation on mobile */
+        height: 100%; /* Make the video take up 80% of the viewport height */
+        border-radius: 10px; /* Slightly smaller border radius for mobile */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .videoFeed {
+        width: 100%; /* Ensure the video takes the full width */
+        height: 100%; /* Make the video take full height in this mode */
+    }
+}
+
+
+@media screen and (min-width:800px){
+    .room{
+        position: relative;
+        
+    }
+    .zoomIn{
+        border: 1px;
+        margin-bottom: 10px;
+        background-color: f0f4f8;    
+        border-radius: 5px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: block;
+        position: absolute; 
+        top: 10px;
+        right: 10px;
+            
+    }
+
+}

@@ -1,0 +1,181 @@
+/* Base sidebar styles */
+/*{ .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px; /* Expanded width 
+    background-color: #fff;
+    transition: width 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar.collapsed {
+    width: 80px; /* Collapsed width for small screens 
+  }
+  
+  .logo {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .menu-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  
+  .menu-text {
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Collapsed Sidebar Behavior 
+  .sidebar.collapsed .menu-text {
+    display: none;
+  }
+  
+  /* Hover text show on collapsed 
+  .sidebar.collapsed .menu-item:hover .menu-text {
+    display: block;
+    position: absolute;
+    left: 90px; /* Adjust according to collapsed width 
+    background-color: #fff;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Toggle button 
+  .toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  /* Media Query for smaller screens 
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 80px; /* Collapsed width by default on smaller screens 
+    }
+    
+    .sidebar.collapsed {
+      width: 250px; /* Expand on toggle 
+    }
+  }
+*/
+
+
+/* Styles for the sidebar */
+.sidebar {
+  background-color: #fff;
+  width: 250px;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+  transition: width 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.collapsed {
+  width: 80px; /* Adjust this width for the collapsed state */
+}
+
+/* Styling for sidebar menu items */
+.sidebarMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.menuItem:hover {
+  background-color: #f0f0f0;
+}
+
+.menuItem img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  transition: margin-right 0.3s ease-in-out;
+}
+
+/* Initially, the text is shown */
+.menuText {
+  display: inline-block;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar.collapsed .menuText {
+  opacity: 0; /* Hide the text when collapsed */
+  width: 0; /* Optional, just to make sure it doesn't take space */
+}
+
+/* On hover, when sidebar is collapsed, show the text */
+.sidebar.collapsed .menuItem:hover .menuText {
+  opacity: 1;
+  position: absolute;
+  left: 90px;
+  background-color: #f8f9fa;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: none;
+}
+
+/* Toggle button for sidebar */
+.toggleBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.toggleBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries to show collapsed state on smaller screens by default */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+  }
+}
