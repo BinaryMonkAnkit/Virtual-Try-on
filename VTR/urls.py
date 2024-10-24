@@ -17,7 +17,7 @@ urlpatterns = [
 
     path('', views.index, name= 'group'),
     path('upload_image/', views.upload_image, name='upload_image'),
-
+    
     
 
 ]

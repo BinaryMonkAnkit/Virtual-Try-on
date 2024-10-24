@@ -15,6 +15,7 @@ __pycache__
 # Ignore specific large files
 *.pyd
 *.dll
+garment_images/
 
 # Ignore sensitive files
 .env
